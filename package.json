@@ -1,0 +1,27 @@
+{
+  "name": "eslint-config-wildbit",
+  "version": "1.0.0",
+  "description": "Wildbit-specific ESLint rules",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wildbit/eslint-config-wildbit.git"
+  },
+  "author": "Andrey Okonetchnikov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wildbit/eslint-config-wildbit/issues"
+  },
+  "homepage": "https://github.com/wildbit/eslint-config-wildbit#readme",
+  "devDependencies": {
+    "eslint": "^1.10.3",
+    "eslint-config-airbnb": "^4.0.0",
+    "eslint-plugin-react": "^3.16.1"
+  },
+  "peerDependencies": {
+    "eslint": ">=1.0.0"
+  }
+}
