@@ -13,3 +13,13 @@ Wildbit-specific config for ESLint
     ]
   }
 ```
+
+## Adding a pre-commit hook
+
+Linting makes more sense when running before committing the code.
+
+To add a pre-commit task:
+
+1. `npm install -D pre-commit lint-staged`
+2. Add `"eslint-staged": "eslint-staged"` to `scripts` section of `package.json`
+3. Add `"pre-commit": [ "eslint-staged" ]` to `package.json`
