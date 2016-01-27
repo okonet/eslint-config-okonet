@@ -16,12 +16,13 @@
     "url": "https://github.com/wildbit/eslint-config-wildbit/issues"
   },
   "homepage": "https://github.com/wildbit/eslint-config-wildbit#readme",
-  "devDependencies": {
+  "dependencies": {
     "eslint": "^1.10.3",
     "eslint-config-airbnb": "^4.0.0",
     "eslint-plugin-react": "^3.16.1"
   },
   "peerDependencies": {
-    "eslint": ">=1.0.0"
+    "eslint": "1.x",
+    "eslint-plugin-react": "3.x"
   }
 }
