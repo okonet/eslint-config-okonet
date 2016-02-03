@@ -22,6 +22,12 @@ module.exports = {
         'no-debugger': 2,
         'guard-for-in': 0,
         'object-curly-spacing': [2, 'always'],
-        'react/jsx-indent-props': [2, 4]
+
+        // React
+        'react/jsx-indent-props': [2, 4],
+
+        // flow-vars plugin
+        'flow-vars/define-flow-type': 1,
+        'flow-vars/use-flow-type': 1
     }
 };
