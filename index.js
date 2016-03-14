@@ -12,7 +12,8 @@ module.exports = {
         'eslint-config-airbnb/rules/react'
     ].map(require.resolve),
     plugins: [
-        'flow-vars'
+        'flow-vars',
+        'immutable'
     ],
     rules: {
         'semi': [2, 'never'],
@@ -37,6 +38,10 @@ module.exports = {
 
         // flow-vars plugin
         'flow-vars/define-flow-type': 1,
-        'flow-vars/use-flow-type': 1
+        'flow-vars/use-flow-type': 1,
+
+        'immutable/no-let': 2,
+        'immutable/no-this': 2,
+        'immutable/no-mutation': 2
     }
 };
