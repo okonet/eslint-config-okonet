@@ -38,10 +38,6 @@ module.exports = {
 
         // flow-vars plugin
         'flow-vars/define-flow-type': 1,
-        'flow-vars/use-flow-type': 1,
-
-        'immutable/no-let': 1,
-        'immutable/no-this': 1,
-        'immutable/no-mutation': 1
+        'flow-vars/use-flow-type': 1
     }
 };
