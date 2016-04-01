@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/wildbit/eslint-config-wildbit#readme",
   "dependencies": {
+    "babel-eslint": "^6.0.0",
     "eslint": "^2.5.3",
     "eslint-config-airbnb": "^6.2.0",
     "eslint-plugin-flow-vars": "^0.2.1",

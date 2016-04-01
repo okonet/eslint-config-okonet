@@ -1,4 +1,5 @@
 module.exports = {
+    parser: 'babel-eslint',
     env: {
         browser: true, // We write for browser
         es6: true, // using ES6 syntax
