@@ -30,6 +30,7 @@ module.exports = {
         'no-debugger': 2,
         'guard-for-in': 0,
         'object-curly-spacing': [2, 'always'],
+        'template-curly-spacing': [2, 'always'],
 
         // React
         'react/jsx-indent-props': [2, 4],
