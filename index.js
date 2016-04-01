@@ -35,6 +35,21 @@ module.exports = {
 
         // React
         'react/jsx-indent-props': [2, 4],
+        'react/sort-comp': [2, {
+            order: [
+                'flow-types',
+                'static-methods',
+                'lifecycle',
+                'everything-else',
+                'render'
+            ],
+            groups: {
+                'flow-types': [
+                    'props',
+                    'state'
+                ]
+            }
+        }],
 
         // flow-vars plugin
         'flow-vars/define-flow-type': 1,
