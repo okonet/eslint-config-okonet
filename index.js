@@ -10,10 +10,11 @@ module.exports = {
   extends: [
     'eslint-config-airbnb/base',
     'eslint-config-airbnb/rules/strict',
-    'eslint-config-airbnb/rules/react'
+    'eslint-config-airbnb/rules/react',
+    'eslint-plugin-flowtype/dist/configs/recommended'
   ].map(require.resolve),
   plugins: [
-    'flow-vars'
+    'flowtype'
   ],
   rules: {
     'semi': [2, 'never'],
