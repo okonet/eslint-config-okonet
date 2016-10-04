@@ -17,17 +17,17 @@ module.exports = {
     'flowtype'
   ],
   rules: {
-    'semi': [2, 'never'],
-    'indent': [2, 2, {
-      'SwitchCase': 1
+    semi: [2, 'never'],
+    indent: [2, 2, {
+      SwitchCase: 1
     }],
     'comma-dangle': [2, 'never'],
     'jsx-quotes': [2, 'prefer-double'],
     'padded-blocks': [0, 'never'],
-    'id-length': [2, { 'exceptions': ['b'] }],
+    'id-length': [2, { exceptions: ['b'] }],
     'new-cap': [2, {
-      'newIsCap': true,
-      'capIsNewExceptions': ['List', 'Map', 'Set']
+      newIsCap: true,
+      capIsNewExceptions: ['List', 'Map', 'Set']
     }],
     'no-console': 2,
     'no-debugger': 2,
@@ -53,4 +53,4 @@ module.exports = {
       }
     }]
   }
-};
+}
