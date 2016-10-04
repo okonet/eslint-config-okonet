@@ -8,8 +8,8 @@ module.exports = {
     jest: true
   },
   extends: [
-    'eslint-config-airbnb/base',
-    'eslint-config-airbnb/rules/strict',
+    'eslint-config-airbnb-base',
+    'eslint-config-airbnb-base/rules/strict',
     'eslint-config-airbnb/rules/react',
     'eslint-plugin-flowtype/dist/configs/recommended'
   ].map(require.resolve),
@@ -51,10 +51,6 @@ module.exports = {
           'state'
         ]
       }
-    }],
-
-    // flow-vars plugin
-    'flow-vars/define-flow-type': 1,
-    'flow-vars/use-flow-type': 1
+    }]
   }
 };
