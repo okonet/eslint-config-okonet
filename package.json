@@ -1,7 +1,7 @@
 {
-  "name": "eslint-config-wildbit",
-  "version": "2.0.1",
-  "description": "Wildbit-specific ESLint rules",
+  "name": "eslint-config-okonet",
+  "version": "1.0.0",
+  "description": "ESLint rules from Andrey Okonetchnikov",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wildbit/eslint-config-wildbit.git"
+    "url": "git+https://github.com/okonet/eslint-config-okonet.git"
   },
   "author": "Andrey Okonetchnikov",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/wildbit/eslint-config-wildbit/issues"
+    "url": "https://github.com/okonet/eslint-config-okonet/issues"
   },
-  "homepage": "https://github.com/wildbit/eslint-config-wildbit#readme",
+  "homepage": "https://github.com/okonet/eslint-config-okonet#readme",
   "dependencies": {
     "babel-eslint": "^7.0.0",
     "eslint": "^3.7.1",
