@@ -34,5 +34,7 @@
   "devDependencies": {
     "npm-check": "^5.0.1"
   },
-  "eslintConfig": "./"
+  "eslintConfig": {
+    "extends": "./index.js"
+  }
 }
