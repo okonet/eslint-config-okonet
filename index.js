@@ -17,7 +17,7 @@ module.exports = {
   ],
   rules: {
     'semi': [2, 'never'],
-    'indent': [2, 4, {
+    'indent': [2, 2, {
       'SwitchCase': 1
     }],
     'comma-dangle': [2, 'never'],
@@ -35,7 +35,7 @@ module.exports = {
     'template-curly-spacing': [2, 'always'],
 
     // React
-    'react/jsx-indent-props': [2, 4],
+    'react/jsx-indent-props': [2, 2],
     'react/sort-comp': [2, {
       order: [
         'flow-types',
