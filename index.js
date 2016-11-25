@@ -16,6 +16,9 @@ module.exports = {
   plugins: [
     'flowtype'
   ],
+  settings: {
+    'import/resolver': 'webpack'
+  },
   rules: {
     semi: [2, 'never'],
     indent: [2, 2, {
@@ -51,6 +54,16 @@ module.exports = {
           'state'
         ]
       }
+    }],
+
+    // Import
+    'import/no-extraneous-dependencies': [2, {
+      devDependencies: [
+        '**/webpack*.js',
+        '**/*.spec.js',
+        '**/*.stories.js',
+        '**/.storybook/*'
+      ]
     }]
   }
 }
