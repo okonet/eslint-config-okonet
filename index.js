@@ -16,9 +16,6 @@ module.exports = {
   plugins: [
     'flowtype'
   ],
-  settings: {
-    'import/resolver': 'webpack'
-  },
   rules: {
     semi: [2, 'never'],
     indent: [2, 2, {
