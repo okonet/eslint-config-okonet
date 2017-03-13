@@ -37,6 +37,7 @@ module.exports = {
 
     // React
     'react/jsx-indent-props': [2, 2],
+    'react/jsx-filename-extension': 0,
     'react/sort-comp': [2, {
       order: [
         'flow-types',
@@ -60,10 +61,10 @@ module.exports = {
         '**/*.spec.js',
         '**/*.stories.js',
         '**/.storybook/*',
-        '*enzyme*',
-        '*sinon*',
-        '*mocha*',
-        '*chai*'
+        'enzyme',
+        'sinon',
+        'mocha',
+        'chai*'
       ]
     }]
   }
