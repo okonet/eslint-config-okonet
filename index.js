@@ -59,7 +59,11 @@ module.exports = {
         '**/webpack*.js',
         '**/*.spec.js',
         '**/*.stories.js',
-        '**/.storybook/*'
+        '**/.storybook/*',
+        '*enzyme*',
+        '*sinon*',
+        '*mocha*',
+        '*chai*'
       ]
     }]
   }
