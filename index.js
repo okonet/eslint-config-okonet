@@ -8,23 +8,16 @@ module.exports = {
     jest: true
   },
   extends: [
-    'eslint-config-prettier',
     'eslint-config-airbnb-base',
     'eslint-config-airbnb-base/rules/strict',
     'eslint-config-airbnb/rules/react',
-    'eslint-plugin-flowtype/dist/configs/recommended'
+    'eslint-plugin-flowtype/dist/configs/recommended',
+    'eslint-config-prettier',
+    'eslint-config-prettier/flowtype',
+    'eslint-config-prettier/react'
   ].map(require.resolve),
   plugins: ['flowtype', 'prettier'],
   rules: {
-    indent: [
-      2,
-      2,
-      {
-        SwitchCase: 1
-      }
-    ],
-    'comma-dangle': [2, 'never'],
-    'jsx-quotes': [2, 'prefer-double'],
     'padded-blocks': [0, 'never'],
     'id-length': [2, { exceptions: ['b'] }],
     'new-cap': [
@@ -37,11 +30,8 @@ module.exports = {
     'no-console': 2,
     'no-debugger': 2,
     'guard-for-in': 0,
-    'object-curly-spacing': [2, 'always'],
-    'template-curly-spacing': [2, 'always'],
 
     // React
-    'react/jsx-indent-props': [2, 2],
     'react/jsx-filename-extension': 0,
     'react/sort-comp': [
       2,
