@@ -8,27 +8,32 @@ module.exports = {
     jest: true
   },
   extends: [
+    'eslint-config-prettier',
     'eslint-config-airbnb-base',
     'eslint-config-airbnb-base/rules/strict',
     'eslint-config-airbnb/rules/react',
     'eslint-plugin-flowtype/dist/configs/recommended'
   ].map(require.resolve),
-  plugins: [
-    'flowtype'
-  ],
+  plugins: ['flowtype', 'prettier'],
   rules: {
-    semi: [2, 'never'],
-    indent: [2, 2, {
-      SwitchCase: 1
-    }],
+    indent: [
+      2,
+      2,
+      {
+        SwitchCase: 1
+      }
+    ],
     'comma-dangle': [2, 'never'],
     'jsx-quotes': [2, 'prefer-double'],
     'padded-blocks': [0, 'never'],
     'id-length': [2, { exceptions: ['b'] }],
-    'new-cap': [2, {
-      newIsCap: true,
-      capIsNewExceptions: ['List', 'Map', 'Set']
-    }],
+    'new-cap': [
+      2,
+      {
+        newIsCap: true,
+        capIsNewExceptions: ['List', 'Map', 'Set']
+      }
+    ],
     'no-console': 2,
     'no-debugger': 2,
     'guard-for-in': 0,
@@ -38,34 +43,46 @@ module.exports = {
     // React
     'react/jsx-indent-props': [2, 2],
     'react/jsx-filename-extension': 0,
-    'react/sort-comp': [2, {
-      order: [
-        'flow-types',
-        'static-methods',
-        'lifecycle',
-        'everything-else',
-        'render'
-      ],
-      groups: {
-        'flow-types': [
-          'props',
-          'state'
-        ]
+    'react/sort-comp': [
+      2,
+      {
+        order: [
+          'flow-types',
+          'static-methods',
+          'lifecycle',
+          'everything-else',
+          'render'
+        ],
+        groups: {
+          'flow-types': ['props', 'state']
+        }
       }
-    }],
+    ],
 
     // Import
-    'import/no-extraneous-dependencies': [2, {
-      devDependencies: [
-        '**/webpack*.js',
-        '**/*.spec.js',
-        '**/*.stories.js',
-        '**/.storybook/*',
-        'enzyme',
-        'sinon',
-        'mocha',
-        'chai*'
-      ]
-    }]
+    'import/no-extraneous-dependencies': [
+      2,
+      {
+        devDependencies: [
+          '**/webpack*.js',
+          '**/*.spec.js',
+          '**/*.stories.js',
+          '**/.storybook/*',
+          'enzyme',
+          'sinon',
+          'mocha',
+          'chai*'
+        ]
+      }
+    ],
+
+    // Prettier
+    'prettier/prettier': [
+      'error',
+      {
+        trailingComma: 'none',
+        singleQuote: true
+      }
+    ]
   }
-}
+};
