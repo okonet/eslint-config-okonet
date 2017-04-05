@@ -19,7 +19,7 @@ module.exports = {
   plugins: ['flowtype', 'prettier'],
   rules: {
     'padded-blocks': [0, 'never'],
-    'id-length': [2, { exceptions: ['b'] }],
+    'id-length': [2, { exceptions: ['b', 'x', 'y', 'i'] }],
     'new-cap': [
       2,
       {
