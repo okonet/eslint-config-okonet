@@ -36,13 +36,7 @@ module.exports = {
     'react/sort-comp': [
       2,
       {
-        order: [
-          'flow-types',
-          'static-methods',
-          'lifecycle',
-          'everything-else',
-          'render'
-        ],
+        order: ['flow-types', 'static-methods', 'lifecycle', 'everything-else', 'render'],
         groups: {
           'flow-types': ['props', 'state']
         }
@@ -70,9 +64,13 @@ module.exports = {
     'prettier/prettier': [
       'error',
       {
+        printWidth: 100,
         trailingComma: 'none',
-        singleQuote: true
+        singleQuote: true,
+        semi: false,
+        jsxBracketSameLine: false,
+        bracketSpacing: true
       }
     ]
   }
-};
+}
