@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-okonet",
-  "version": "4.0.1",
+  "version": "4.0.2",
   "description": "ESLint rules from Andrey Okonetchnikov",
   "main": "index.js",
   "scripts": {
