@@ -32,7 +32,7 @@
   },
   "homepage": "https://github.com/okonet/eslint-config-okonet#readme",
   "dependencies": {
-    "babel-eslint": "^7.0.0",
+    "babel-eslint": "^7.2.3",
     "eslint-config-airbnb": "^15.1.0",
     "eslint-config-prettier": "^2.3.0",
     "eslint-plugin-flowtype": "^2.19.0",
