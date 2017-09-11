@@ -1,7 +1,7 @@
 'use strict'
 
 module.exports = {
-  parser: 'babel-eslint',
+  parser: require.resolve('babel-eslint'),
   parserOptions: {
     sourceType: 'module'
   },
