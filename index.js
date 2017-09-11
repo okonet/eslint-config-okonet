@@ -1,6 +1,9 @@
 'use strict'
 
 module.exports = {
+  parserOptions: {
+    ecmaVersion: 2017
+  },
   env: {
     es6: true, // This setting enables ES6 syntax automatically
     jest: true
