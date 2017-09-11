@@ -13,7 +13,13 @@ ESLint rules from Andrey Okonetchnikov
 ```json
 "eslintConfig": {
     "extends": [
-      "eslint-config-okonet"
+      "okonet"
     ]
   }
 ```
+
+This will add generic config.
+
+For React.js projects, extend from `okonet/react`
+
+For Node.js projects, extend from `okonet/node`

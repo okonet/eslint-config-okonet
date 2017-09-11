@@ -2,7 +2,11 @@
   "name": "eslint-config-okonet",
   "version": "0.0.0-development",
   "description": "ESLint rules from Andrey Okonetchnikov",
-  "main": "index.js",
+  "files": [
+    "index.js",
+    "react.js",
+    "node.js"
+  ],
   "scripts": {
     "test": "npm run lint",
     "lint": "eslint .",
@@ -35,6 +39,7 @@
     "eslint-plugin-flowtype": "^2.19.0",
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-node": "^5.1.1",
     "eslint-plugin-prettier": "^2.0.1",
     "eslint-plugin-react": "^7.3.0"
   },
@@ -50,6 +55,9 @@
     "prettier": "^1.5.3"
   },
   "eslintConfig": {
-    "extends": "./index.js"
+    "extends": "./node.js"
+  },
+  "engines": {
+    "node": ">= 4"
   }
 }

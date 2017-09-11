@@ -1,20 +1,16 @@
+'use strict'
+
 module.exports = {
-  parser: 'babel-eslint',
   env: {
-    es6: true,
-    browser: true,
-    commonjs: true,
-    mocha: true,
+    es6: true, // This setting enables ES6 syntax automatically
     jest: true
   },
   extends: [
     'eslint-config-airbnb-base',
     'eslint-config-airbnb-base/rules/strict',
-    'eslint-config-airbnb/rules/react',
     'eslint-plugin-flowtype/dist/configs/recommended',
     'eslint-config-prettier',
-    'eslint-config-prettier/flowtype',
-    'eslint-config-prettier/react'
+    'eslint-config-prettier/flowtype'
   ].map(require.resolve),
   plugins: ['flowtype', 'prettier'],
   rules: {
@@ -30,18 +26,6 @@ module.exports = {
     'no-console': 2,
     'no-debugger': 2,
     'guard-for-in': 0,
-
-    // React
-    'react/jsx-filename-extension': 0,
-    'react/sort-comp': [
-      2,
-      {
-        order: ['flow-types', 'static-methods', 'lifecycle', 'everything-else', 'render'],
-        groups: {
-          'flow-types': ['props', 'state']
-        }
-      }
-    ],
 
     // Import
     'import/no-extraneous-dependencies': [
