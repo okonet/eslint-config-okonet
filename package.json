@@ -8,6 +8,7 @@
     "node.js"
   ],
   "scripts": {
+    "postinstall": "install-peerdeps eslint-config-okonet --dev --only-peers",
     "test": "npm run lint",
     "lint": "eslint .",
     "precommit": "lint-staged",
@@ -32,26 +33,27 @@
   },
   "homepage": "https://github.com/okonet/eslint-config-okonet#readme",
   "dependencies": {
-    "babel-eslint": "^7.2.3",
-    "eslint-config-airbnb": "^15.1.0",
-    "eslint-config-prettier": "^2.3.0",
-    "eslint-plugin-flowtype": "^2.19.0",
-    "eslint-plugin-import": "^2.7.0",
-    "eslint-plugin-jsx-a11y": "^5.1.1",
-    "eslint-plugin-node": "^5.1.1",
-    "eslint-plugin-prettier": "^2.0.1",
-    "eslint-plugin-react": "^7.3.0"
+    "install-peerdeps": "^1.2.0"
   },
   "peerDependencies": {
+    "babel-eslint": "7.x",
     "eslint": "4.x",
+    "eslint-config-airbnb": "15.x",
+    "eslint-config-prettier": "2.x",
+    "eslint-plugin-flowtype": "2.x",
+    "eslint-plugin-import": "2.x",
+    "eslint-plugin-jsx-a11y": "5.x",
+    "eslint-plugin-node": "5.x",
+    "eslint-plugin-prettier": "2.x",
+    "eslint-plugin-react": "7.x",
     "prettier": "*"
   },
   "devDependencies": {
-    "eslint": "^4.5.0",
+    "eslint": "^4.6.1",
     "husky": "^0.14.3",
     "lint-staged": "^4.0.4",
     "npm-check": "^5.0.1",
-    "prettier": "^1.5.3"
+    "prettier": "^1.6.1"
   },
   "eslintConfig": {
     "extends": "./node.js"
