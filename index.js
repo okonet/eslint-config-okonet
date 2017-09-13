@@ -11,11 +11,9 @@ module.exports = {
   extends: [
     'eslint-config-airbnb-base',
     'eslint-config-airbnb-base/rules/strict',
-    'eslint-plugin-flowtype/dist/configs/recommended',
-    'eslint-config-prettier',
-    'eslint-config-prettier/flowtype'
+    'eslint-config-prettier'
   ].map(require.resolve),
-  plugins: ['flowtype', 'prettier'],
+  plugins: ['prettier'],
   rules: {
     'padded-blocks': [0, 'never'],
     'id-length': [2, { exceptions: ['b', 'x', 'y', 'i'] }],
