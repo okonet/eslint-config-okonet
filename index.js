@@ -39,6 +39,7 @@ module.exports = {
           '**/*.spec.js',
           '**/*.stories.js',
           '**/.storybook/*',
+          'tests/*.js',
           'enzyme',
           'sinon',
           'mocha',
