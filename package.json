@@ -36,7 +36,7 @@
     "install-peerdeps": "^1.2.0"
   },
   "peerDependencies": {
-    "babel-eslint": "7.x",
+    "babel-eslint": "*",
     "eslint": "4.x",
     "eslint-config-airbnb": "15.x",
     "eslint-config-prettier": "2.x",
