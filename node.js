@@ -8,7 +8,7 @@ module.exports = {
     node: true
   },
   plugins: ['node'],
-  extends: ['./index.js', 'plugin:node/recommended'],
+  extends: [require.resolve('./index.js'), 'plugin:node/recommended'],
   rules: {
     strict: ['error', 'global'],
     'node/exports-style': ['error', 'module.exports']

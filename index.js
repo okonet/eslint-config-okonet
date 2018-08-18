@@ -8,7 +8,7 @@ module.exports = {
     es6: true, // This setting enables ES6 syntax automatically
     jest: true
   },
-  extends: ['eslint-config-prettier'].map(require.resolve).concat(['eslint:recommended']),
+  extends: ['eslint-config-prettier', 'eslint:recommended'],
   plugins: ['prettier', 'import'],
   rules: {
     'padded-blocks': [0, 'never'],
