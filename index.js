@@ -8,12 +8,8 @@ module.exports = {
     es6: true, // This setting enables ES6 syntax automatically
     jest: true
   },
-  extends: [
-    'eslint-config-airbnb-base',
-    'eslint-config-airbnb-base/rules/strict',
-    'eslint-config-prettier'
-  ].map(require.resolve),
-  plugins: ['prettier'],
+  extends: ['eslint-config-prettier'].map(require.resolve).concat(['eslint:recommended']),
+  plugins: ['prettier', 'import'],
   rules: {
     'padded-blocks': [0, 'never'],
     'id-length': [2, { exceptions: ['b', 'x', 'y', 'i'] }],

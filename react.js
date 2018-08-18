@@ -9,9 +9,12 @@ module.exports = {
     browser: true,
     commonjs: true
   },
-  extends: ['./index.js', 'eslint-config-airbnb/rules/react', 'eslint-config-prettier/react'].map(
-    require.resolve
-  ),
+  extends: [
+    './index.js',
+    'jsx-a11y',
+    'plugin:react/recommended',
+    'eslint-config-prettier/react'
+  ].map(require.resolve),
   rules: {
     // React
     'react/jsx-filename-extension': 0,
