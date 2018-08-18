@@ -11,10 +11,11 @@ module.exports = {
   },
   extends: [
     './index.js',
-    'jsx-a11y',
-    'plugin:react/recommended',
+    'eslint-plugin-react/recommended',
+    'eslint-plugin-jsx-a11y/recommended',
     'eslint-config-prettier/react'
   ].map(require.resolve),
+  plugins: ['eslint-plugin-jsx-a11y'].map(require.resolve),
   rules: {
     // React
     'react/jsx-filename-extension': 0,
